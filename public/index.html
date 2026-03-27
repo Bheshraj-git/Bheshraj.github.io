@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bheshraj Upreti - Full-Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400;500&family=Cabinet+Grotesk:wght@300;400;500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Grain overlay -->
+  <div class="grain"></div>
+
+  <!-- Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- ═══════════════════════════ NAVBAR ═══════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">BU<span class="dot">.</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="/resume.pdf" class="nav-cta" target="_blank">Resume ↗</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════ HERO ═══════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-text">PORTFOLIO</div>
+    <div class="hero-content">
+      <p class="hero-intro reveal">Hello, I'm</p>
+      <h1 class="hero-name reveal">
+        <span class="line">Bheshraj</span>
+        <span class="line italic">Upreti</span>
+      </h1>
+      <div class="hero-role reveal">
+        <span class="role-label">Full-Stack Developer</span>
+        <span class="role-divider">—</span>
+        <span class="role-sub">Building digital experiences that matter</span>
+      </div>
+      <div class="hero-actions reveal">
+        <a href="#projects" class="btn-primary">View My Work</a>
+        <a href="#contact" class="btn-ghost">Let's Talk</a>
+      </div>
+    </div>
+    <div class="hero-meta">
+      <div class="hero-scroll">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+      <div class="hero-location">📍 Kathmandu, Nepal</div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat reveal-stat"><span class="stat-num">5+</span><span class="stat-label">Years Exp.</span></div>
+      <div class="stat reveal-stat"><span class="stat-num">40+</span><span class="stat-label">Projects</span></div>
+      <div class="stat reveal-stat"><span class="stat-num">15+</span><span class="stat-label">Clients</span></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ ABOUT ═══════════════════════════ -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">01 / About</span>
+        <h2 class="section-title">A developer who <em>cares</em> about craft.</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="about-lead">I build thoughtful web applications — clean code, seamless UX, and systems that scale.
+            From idea to deployment, I treat every project as a chance to make something genuinely good.</p>
+          <p>Based in Kathmandu, I've worked across startups, agencies, and independent projects. I believe the best
+            software feels invisible — it just works, beautifully.</p>
+          <p>When I'm not coding, I'm reading about systems design, hiking the Himalayas, or experimenting with
+            generative art.</p>
+          <div class="about-links">
+            <a href="https://github.com/Bheshraj-git" target="_blank" class="social-link">GitHub ↗</a>
+            <a href="https://www.linkedin.com/in/bheshraj-upreti/" target="_blank" class="social-link">LinkedIn ↗</a>
+            <a href="https://www.instagram.com/just.sagarupreti/" target="_blank" class="social-link">Instagram ↗</a>
+          </div>
+        </div>
+        <div class="about-image-wrap">
+          <div class="about-image">
+            <div class="image-placeholder">
+              <div class="initials">BU</div>
+            </div>
+            <div class="about-image-tag">Open to opportunities</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ EXPERIENCE ═══════════════════════════ -->
+  <section class="section experience" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">02 / Experience</span>
+        <h2 class="section-title">Where I've <em>built things.</em></h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Senior Full-Stack Engineer</h3>
+              <span class="timeline-period">2022 — Present</span>
+            </div>
+            <p class="timeline-company">TechCorp Inc. <span class="timeline-location">· Remote</span></p>
+            <p class="timeline-desc">Led development of the core platform serving 200k+ users. Rebuilt the frontend in
+              React, reduced load time by 60%, and architected a microservices backend on AWS.</p>
+            <div class="timeline-tags">
+              <span>React</span><span>Node.js</span><span>AWS</span><span>PostgreSQL</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item reveal-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Full-Stack Developer</h3>
+              <span class="timeline-period">2020 — 2022</span>
+            </div>
+            <p class="timeline-company">StartupXYZ <span class="timeline-location">· Kathmandu</span></p>
+            <p class="timeline-desc">Built the MVP from scratch. Implemented real-time features with WebSockets,
+              designed the REST API, and deployed the full stack on DigitalOcean.</p>
+            <div class="timeline-tags">
+              <span>Vue.js</span><span>Express</span><span>MongoDB</span><span>Docker</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item reveal-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Frontend Developer</h3>
+              <span class="timeline-period">2019 — 2020</span>
+            </div>
+            <p class="timeline-company">Digital Agency Nepal <span class="timeline-location">· Kathmandu</span></p>
+            <p class="timeline-desc">Developed responsive websites and web apps for 10+ clients. Focused on performance,
+              accessibility, and pixel-perfect implementation.</p>
+            <div class="timeline-tags">
+              <span>HTML/CSS</span><span>JavaScript</span><span>WordPress</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ PROJECTS ═══════════════════════════ -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">03 / Projects</span>
+        <h2 class="section-title">Things I've <em>shipped.</em></h2>
+      </div>
+      <div class="projects-grid">
+
+        <article class="project-card project-featured reveal-up">
+          <div class="project-number">01</div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-year">2024</span>
+              <span class="project-type">SaaS / Full-Stack</span>
+            </div>
+            <h3 class="project-title">FlowDesk</h3>
+            <p class="project-desc">A project management tool with AI-powered task prioritization, real-time
+              collaboration, and an elegant Kanban interface. Scaled to 5k users in 3 months.</p>
+            <div class="project-stack">
+              <span>Next.js</span><span>Prisma</span><span>OpenAI</span><span>Vercel</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">Live Demo ↗</a>
+              <a href="#" class="project-link">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal-up">
+          <div class="project-number">02</div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-year">2023</span>
+              <span class="project-type">Mobile / API</span>
+            </div>
+            <h3 class="project-title">TrailMap</h3>
+            <p class="project-desc">Hiking trail discovery app for Nepal featuring offline maps, weather integration,
+              and community trail reviews.</p>
+            <div class="project-stack">
+              <span>React Native</span><span>Node.js</span><span>MongoDB</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">Case Study ↗</a>
+              <a href="#" class="project-link">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal-up">
+          <div class="project-number">03</div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-year">2023</span>
+              <span class="project-type">Open Source</span>
+            </div>
+            <h3 class="project-title">Schema Forge</h3>
+            <p class="project-desc">CLI tool that auto-generates TypeScript types, Zod schemas, and API documentation
+              from a database schema. 800+ GitHub stars.</p>
+            <div class="project-stack">
+              <span>TypeScript</span><span>Node.js</span><span>Zod</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">npm ↗</a>
+              <a href="#" class="project-link">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal-up">
+          <div class="project-number">04</div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-year">2022</span>
+              <span class="project-type">E-commerce</span>
+            </div>
+            <h3 class="project-title">Katha Store</h3>
+            <p class="project-desc">Modern e-commerce platform for Nepali artisan products with Stripe payments,
+              inventory management, and an admin dashboard.</p>
+            <div class="project-stack">
+              <span>Next.js</span><span>Stripe</span><span>Sanity CMS</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">Live ↗</a>
+              <a href="#" class="project-link">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ SKILLS ═══════════════════════════ -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">04 / Skills</span>
+        <h2 class="section-title">My <em>toolkit.</em></h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-group reveal-up">
+          <h3 class="skill-group-title">Frontend</h3>
+          <ul class="skill-list">
+            <li><span class="skill-name">React / Next.js</span>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="92"></div>
+              </div>
+            </li>
+            <li><span class="skill-name">TypeScript</span>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="88"></div>
+              </div>
+            </li>
+            <li><span class="skill-name">Vue.js / Nuxt</span>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="80"></div>
+              </div>
+            </li>
+            <li><span class="skill-name">CSS / Tailwind</span>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="95"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="skill-group reveal-up">
+          <h3 class="skill-group-title">Backend</h3>
+          <ul class="skill-list">
+            <li><span class="skill-name">Node.js / Express</span>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="90"></div>
+              </div>
+            </li>
+            <li><span class="skill-name">PostgreSQL</span>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="85"></div>
+              </div>
+            </li>
+            <li><span class="skill-name">MongoDB</span>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="82"></div>
+              </div>
+            </li>
+            <li><span class="skill-name">GraphQL</span>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="75"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="skill-group reveal-up">
+          <h3 class="skill-group-title">DevOps & Tools</h3>
+          <ul class="skill-list">
+            <li><span class="skill-name">Docker / K8s</span>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="78"></div>
+              </div>
+            </li>
+            <li><span class="skill-name">AWS / Vercel</span>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="83"></div>
+              </div>
+            </li>
+            <li><span class="skill-name">Git / CI/CD</span>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="91"></div>
+              </div>
+            </li>
+            <li><span class="skill-name">Linux / Bash</span>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="80"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ CONTACT ═══════════════════════════ -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">05 / Contact</span>
+        <h2 class="section-title">Let's <em>build something.</em></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-text reveal-up">
+          <p class="contact-lead">Have a project in mind? Looking for a developer to join your team? Or just want to say
+            hi? My inbox is always open.</p>
+          <div class="contact-info">
+            <a href="sagarupreti199@gmail.com class=" contact-item">
+              <span class="contact-icon">✉</span>
+              <span>sagarupreti199@gmail.com</span>
+            </a>
+            <a href="tel:+977-9767566769" class="contact-item">
+              <span class="contact-icon">☏</span>
+              <span>+977 976 756 6769</span>
+            </a>
+            <div class="contact-item">
+              <span class="contact-icon">📍</span>
+              <span>Kathmandu, Nepal</span>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form reveal-up" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Project inquiry" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."
+              required></textarea>
+          </div>
+          <button type="submit" class="btn-primary btn-full" id="submitBtn">
+            <span>Send Message</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </button>
+          <div class="form-status" id="formStatus"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-left">
+          <span class="footer-logo">BU<span class="dot">.</span></span>
+          <p>Developer based in Kathmandu, Nepal.</p>
+        </div>
+        <div class="footer-center">
+          <p class="footer-copy">© 2025 Bheshraj Upreti. All rights reserved.</p>
+        </div>
+        <div class="footer-right">
+          <a href="https://github.com/Bheshraj-git" target="_blank">GH</a>
+          <a href="https://www.linkedin.com/in/bheshraj-upreti/" target="_blank">LI</a>
+          <a href="https://www.instagram.com/just.sagarupreti/" target="_blank">IN</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

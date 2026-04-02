@@ -1,6 +1,6 @@
 /* ═══════════════════════════════════════════════════
    PORTFOLIO — script.js
-   Alex Morgan | Full-Stack Developer
+   Bheshraj Upreti | Full-Stack Developer
 ═══════════════════════════════════════════════════ */
 
 // ─── CUSTOM CURSOR ─────────────────────────────────
@@ -13,22 +13,22 @@ document.addEventListener('mousemove', (e) => {
   mouseX = e.clientX;
   mouseY = e.clientY;
   cursor.style.left = mouseX + 'px';
-  cursor.style.top  = mouseY + 'px';
+  cursor.style.top = mouseY + 'px';
 });
 
 function animateFollower() {
   followerX += (mouseX - followerX) * 0.1;
   followerY += (mouseY - followerY) * 0.1;
   follower.style.left = followerX + 'px';
-  follower.style.top  = followerY + 'px';
+  follower.style.top = followerY + 'px';
   requestAnimationFrame(animateFollower);
 }
 animateFollower();
 
 // ─── NAVBAR ────────────────────────────────────────
-const navbar   = document.getElementById('navbar');
+const navbar = document.getElementById('navbar');
 const navToggle = document.getElementById('navToggle');
-const navLinks  = document.getElementById('navLinks');
+const navLinks = document.getElementById('navLinks');
 
 // Scroll: add glass depth
 window.addEventListener('scroll', () => {
@@ -53,8 +53,8 @@ navLinks.querySelectorAll('a').forEach(link => {
 // Active link highlighting
 function updateActiveLink() {
   const sections = document.querySelectorAll('section[id]');
-  const links    = document.querySelectorAll('.nav-link');
-  let current    = '';
+  const links = document.querySelectorAll('.nav-link');
+  let current = '';
 
   sections.forEach(section => {
     const top = section.offsetTop - 120;
@@ -117,16 +117,16 @@ window.addEventListener('load', () => {
 });
 
 // ─── CONTACT FORM ──────────────────────────────────
-const form       = document.getElementById('contactForm');
-const submitBtn  = document.getElementById('submitBtn');
+const form = document.getElementById('contactForm');
+const submitBtn = document.getElementById('submitBtn');
 const formStatus = document.getElementById('formStatus');
 
 if (form) {
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
-    const name    = document.getElementById('name').value.trim();
-    const email   = document.getElementById('email').value.trim();
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
     const subject = document.getElementById('subject').value.trim();
     const message = document.getElementById('message').value.trim();
 
@@ -206,8 +206,8 @@ const roles = [
   'UI/UX Enthusiast',
   'Systems Thinker',
 ];
-let roleIndex  = 0;
-let charIndex  = 0;
+let roleIndex = 0;
+let charIndex = 0;
 let isDeleting = false;
 const roleLabel = document.querySelector('.role-label');
 
@@ -248,5 +248,5 @@ document.querySelectorAll('a, button, input, textarea').forEach(el => {
   });
 });
 
-console.log('%c Alex Morgan Portfolio ', 'background:#1a1a1a;color:#f5f0e8;padding:6px 12px;font-size:14px;font-family:monospace;border-radius:4px;');
+console.log('%c Bheshraj Upreti Portfolio ', 'background:#1a1a1a;color:#f5f0e8;padding:6px 12px;font-size:14px;font-family:monospace;border-radius:4px;');
 console.log('%c Built with ♥ in Kathmandu ', 'color:#c8633a;font-family:monospace;');

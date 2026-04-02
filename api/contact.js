@@ -91,7 +91,7 @@ module.exports = async function handler(req, res) {
           <p style="color:#3a3a3a;line-height:1.7;">Thanks for your message! I've received your inquiry and will get back to you within 1–2 business days.</p>
           <p style="color:#3a3a3a;line-height:1.7;margin-top:1rem;">In the meantime, feel free to check out my work on <a href="https://github.com/Bheshraj-git" style="color:#c8633a;">GitHub</a>.</p>
           <hr style="border:none;border-top:1px solid rgba(26,26,26,0.12);margin:1.5rem 0;" />
-          <p style="color:#6b6b6b;">Best,<br /><strong style="color:#1a1a1a;">Bheshraj Upreti</strong></p>
+          <p style="color:#6b6b6b;">Best Regards,<br /><strong style="color:#1a1a1a;">Bheshraj Upreti</strong></p>
           <p style="font-size:0.75rem;color:#a8a8a8;margin-top:1rem;">This is an automated reply — please do not reply directly to this email.</p>
         </div>
       `,

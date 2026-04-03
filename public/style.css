@@ -488,6 +488,18 @@ a {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   writing-mode: vertical-rl;
+  animation: scrollTextBounce 2s ease-in-out infinite;
+}
+
+@keyframes scrollTextBounce {
+  0%, 100% {
+    transform: translateY(0);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(3px);
+    opacity: 1;
+  }
 }
 
 .scroll-line {

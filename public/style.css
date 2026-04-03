@@ -136,6 +136,14 @@ body {
   opacity: 0.5;
 }
 
+body:has(.footer:hover) .cursor {
+  background: var(--cream);
+}
+
+body:has(.footer:hover) .cursor-follower {
+  border-color: var(--cream);
+}
+
 body:has(a:hover) .cursor-follower,
 body:has(button:hover) .cursor-follower {
   width: 48px;
